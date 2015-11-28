@@ -57,7 +57,12 @@
       padding-top: 75px;
     }
 
+    .padding-top-50 {
+      padding-top: 50px;
+    }
+
     .social-links .btn {
+      margin-top: 10px;
       background-color: #ddd;
       border-color: #aaa;
       transition: all 400ms ease-in-out;
@@ -79,7 +84,6 @@
 
 
     .social-links a {
-      margin-left: 40px;
       font-size: 21px;
     }
 
@@ -87,9 +91,22 @@
       padding-right: 10px;
     }
 
+    .continue {
+      font-size: 80px;
+      color: #ddd;
+      transition: all 400ms ease-in-out;
+      -webkit-transition: all 400ms ease-in-out;
+      transform: scale(1);
+    }
+
+    .continue:hover {
+      color: #2FA513;
+      transition: all 400ms ease-in-out;
+      webkit-transition: all 400ms ease-in-out;
+      transform: scale(1.25);
+    }
+
   </style>
-
-
 
 </head>
 
@@ -112,7 +129,7 @@
                 <a href="#">Manifesto</a>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
                 <a href="#">Contact</a>
@@ -132,19 +149,32 @@
           </p>
         </div>
 
-        <div class="row social-links auto-margin padding-top-75">
+        <div class="row social-links auto-margin padding-top-50">
           <div class="text-center">
-            <a class="btn btn-default" href="#" role="button"><i class="fa fa-linkedin"></i>Linkedin</a>
-            <a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter"></i>Twitter</a>
-            <a class="btn btn-default" href="#" role="button"><i class="fa fa-github-alt"></i>Github</a>
-            <a class="btn btn-default" href="#" role="button"><i class="fa fa-fire"></i>Free Code Camp</a>
+            <div class="col-md-2 col-md-offset-2">
+              <a class="btn btn-default" href="#" role="button"><i class="fa fa-linkedin"></i>Linkedin</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter"></i>Twitter</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button"><i class="fa fa-github-alt"></i>Github</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button"><i class="fa fa-fire"></i>Free Code Camp</a>
+            </div>
           </div>
+        </div>
+
+        <div class="row auto-margin padding-top-75 text-center">
+          <a href="#portfolio"><i class="continue fa fa-chevron-down"></i></a>
         </div>
 
       </div>
     </div>
 
     <div class="row">
+      <a name="portfolio"></a>
       <h3>Portfolio</h3>
         <div class="col-md-4">
           <h4>Heading</h4>
@@ -196,7 +226,7 @@
     function setNavPadding() {
       var navHeight = $(".navbar").height();
       //alert(navHeight);
-      $(".intro").css("padding-top", navHeight + "px");
+      $("body").css("margin-top", navHeight + "px");
     }
 
     $(document).ready(setNavPadding());
