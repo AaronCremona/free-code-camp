@@ -11,6 +11,14 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
   <style>
+    div {
+      border: 1px dashed red;
+    }
+
+    body, html {
+      height: 100%;
+    }
+
     .container-fluid {
       padding-left: 0;
       padding-right: 0;
@@ -24,30 +32,35 @@
       font-size: 28px;
     }
 
+    .intro, .contact {
+      color: #ddd;
+    }
+
     .intro {
       padding: 0;
       background: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/F5D50B4BE8.jpg") no-repeat center fixed;
       background-size: cover;
       width: 100%;
       height: 100vh;
-      color: #ddd;
     }
 
     .manifesto {
       padding: 0;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
     }
 
 
     .portfolio {
       padding: 0;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
     }
 
     .contact {
       padding: 0;
+      background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=510562df272fc272c2e7b9a9189a6261") no-repeat center fixed;
+      background-size: cover;
       width: 100%;
       height: 100vh;
     }
@@ -61,7 +74,7 @@
       font-size: 67px;
     }
 
-    .intro p {
+    p {
       font-size: 37px;
     }
 
@@ -84,6 +97,7 @@
       padding-top: 50px;
     }
 
+
     .social-links .btn {
       margin-top: 10px;
       background-color: #ddd;
@@ -105,7 +119,6 @@
 
     }
 
-
     .social-links a {
       font-size: 21px;
     }
@@ -117,6 +130,7 @@
     .continue {
       font-size: 80px;
       color: #ddd;
+      padding-bottom: 30px;
       transition: all 400ms ease-in-out;
       -webkit-transition: all 400ms ease-in-out;
       transform: scale(1);
@@ -129,7 +143,13 @@
       transform: scale(1.25);
     }
 
+    h3 {
+      font-size: 67px;
+    }
 
+    .contact .social-links {
+      padding-top: 150px;
+    }
 
   </style>
 
@@ -175,20 +195,18 @@
           </p>
         </div>
 
-        <div class="row social-links auto-margin padding-top-50">
-          <div class="text-center">
-            <div class="col-md-2 col-md-offset-2">
-              <a class="btn btn-default" href="#" role="button"><i class="fa fa-linkedin"></i>Linkedin</a>
-            </div>
-            <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button"><i class="fa fa-twitter"></i>Twitter</a>
-            </div>
-            <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button"><i class="fa fa-github-alt"></i>Github</a>
-            </div>
-            <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button"><i class="fa fa-fire"></i>Free Code Camp</a>
-            </div>
+        <div class="row social-links auto-margin padding-top-50 text-center">
+          <div class="col-md-2 col-md-offset-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
           </div>
         </div>
 
@@ -201,6 +219,7 @@
 
     <div class="continer-fluid manifesto"> <!-- Manifesto -->
       <a id="manifesto"></a>
+      <h3 class="text-center">Manifesto (abbridged)</h3>
       <p>test content</p>
 
       <div class="row auto-margin padding-top-75 text-center">
@@ -211,7 +230,7 @@
     <div class="container portfolio">   <!-- Portfolio -->
       <a id="portfolio"></a>
       <h3 class="text-center">Portfolio</h3>
-          <div class="row">
+        <div class="row">
           <div class="col-md-4">
             <h4>Heading</h4>
             <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s480x480/e35/12120230_1660914670849910_809073269_n.jpg">
@@ -238,28 +257,35 @@
       <div class="row auto-margin padding-top-75 text-center">
           <a href="#contact"><i class="continue fa fa-chevron-down"></i></a>
       </div>
+
     </div>    <!-- /Portfolio -->
 
-    <div class="continer-fluid contact"> <!-- Contact -->
-      <a id="contact"></a>
-      <h3 class="text-center">Contact me</h3>
-      <div class="row">
-        <div class="col-md-3">
-          <button class="btn btn-block" href="#" target="_blank">Twitter</button>
-        </div>
-        <div class="col-md-3">
-          <button class="btn btn-block" href="#" target="_blank">LinkedIn</button>
-        </div>
-        <div class="col-md-3">
-          <button class="btn btn-block" href="#" target="_blank">GitHub</button>
-        </div>
-        <div class="col-md-3">
-          <button class="btn btn-block" href="#" target="_blank">Free Code Camp</button>
+    <div class="container contact text-center"> <!-- Contact -->
+      <div class="overlay">
+        <a id="contact"></a>
+
+        <h3 class="padding-top-50">Contact me</h3>
+
+        <p class="padding-top-50"><i class="fa fa-envelope-o padding-right"></i><a href="mailto:aaron.m.cremona@gmail.com">aaron.m.cremona@gmail.com</a></p>
+
+        <div class="row social-links auto-margin padding-top-75 text-center">
+          <div class="col-md-2 col-md-offset-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+          </div>
+          <div class="col-md-2">
+            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
+          </div>
         </div>
       </div>
-    </div>   <!--  /Contact -->
+    </div> <!--  /Contact -->
 
-  </div>
+
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
   <script>
