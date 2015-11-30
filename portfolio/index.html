@@ -17,6 +17,7 @@
 
     body, html {
       height: 100%;
+      position: relative;
     }
 
     .container-fluid {
@@ -146,6 +147,7 @@
 
     h3 {
       font-size: 67px;
+      padding: 30px 0 50px 0;
     }
 
     .manifesto .continue {
@@ -160,17 +162,44 @@
       padding-top: 150px;
     }
 
+    .carousel {
+      height: 400px;
+      margin-bottom: 60px;
+    }
+  
+    .carousel-caption {
+      z-index: 10;
+      top: 10%;
+    }
+    
+    .carousel .item {
+      height: 400px;
+      background-color: #777;
+    }
+
+    .carousel p {
+      font-size: 21px;
+    }
+
+    .red {
+      color: red;
+    }
+
+    .green {
+      color: green;
+    }
+
   </style>
 
 </head>
 
-<body>
+<body data-spy="scroll" data-target=".navbar">
 
   <div class="container-fluid">
 
     <div class="row"> <!-- Navbar -->
       <div class="col-md-12">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
           <div class="col-md-12">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">Aaron Cremona</a>
@@ -229,8 +258,55 @@
     <div class="continer-fluid manifesto"> <!-- Manifesto -->
       <a id="manifesto"></a>
       <h3 class="text-center">Manifesto (abridged)</h3>
-      <p>test content</p>
 
+       <!-- Carousel
+          ================================================== -->
+          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1"></li>
+              <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+              <div class="item active">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1><strong>Do more with less</strong></h1>
+                    <p><i class="fa fa-exclamation padding-right red"></i> Reduce labor hours. Increase workload. Expect your pepole to make it work. Wonder why mistakes are piling up and stress is high.</p>
+                    <p><i class="fa fa-check padding-right green"></i> Use technology to automate workflows. Happy people and a happy business. What makes you shake your head and say "there's got to be an eaiser way?"</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1><strong>Why<sup>5</sup></strong></h1>
+                    <p><i class="fa fa-exclamation padding-right red"></i> As a quality engineer, I investigated countless problems. The real issues are usually not at the surface. There is a saying that one must ask "why" at least 5 times to get to the true root cause of a situation. Have you ever seen a hard-fought solution that just seemed to miss the mark? Was the problem poorly defined up front?</p>
+                    <p><i class="fa fa-check padding-right green"></i> My web development philosopy is to look at a problem in its bigger context and work to drive the big picture forward.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="container">
+                  <div class="carousel-caption">
+                    <h1>ROI is King.</h1>
+                    <p><i class="fa fa-exclamation padding-right red"></i> When all you have is a hammer, everything looks like a nail. People that love technlogy often have trouble identifying a solution matches the scope of the problem. Kicking off a project is an investment and it must generate a return for your business.</p>
+                    <p><i class="fa fa-check padding-right green"></i> Waiting for the perefect move means waiting forever. Big problems are really just a series of small problems. Pick something with impact in your business, then take a step forward that makes sense for you. I can help figure out a "right-sized" solution.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div><!-- /.carousel -->
+      
       <div class="row auto-margin padding-top-75 text-center">
           <a href="#portfolio"><i class="continue fa fa-chevron-down"></i></a>
       </div>
@@ -297,6 +373,7 @@
 
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
   <script>
 
     function setNavPadding() {
@@ -306,7 +383,7 @@
     }
 
     $(document).ready(setNavPadding());
-    
+
     $(window).resize(function() {
       setNavPadding();
     });
