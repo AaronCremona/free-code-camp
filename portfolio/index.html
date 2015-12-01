@@ -196,7 +196,7 @@
 <body data-spy="scroll" data-target=".navbar">
 
   <div class="container-fluid">
-
+    <div id="home"></div>
     <div class="row"> <!-- Navbar -->
       <div class="col-md-12">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
@@ -206,7 +206,7 @@
             </div>
             <ul class="nav navbar-nav navbar-right">
               <li>
-                <a href="#">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li>
                 <a href="#manifesto">Manifesto</a>
@@ -388,6 +388,16 @@
       setNavPadding();
     });
 
+  $("a[href^='#']").on('click', function(event) {
+    var target = this.hash,
+      navOffset = $('#navbar').height();
+
+    event.preventDefault();
+
+    return $('html, body').animate({
+      scrollTop: $(this.hash).offset().top - navOffset
+    }, 700);
+  });
   </script>
 </body>
 </html>
