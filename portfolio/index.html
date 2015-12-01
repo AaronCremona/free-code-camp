@@ -193,19 +193,19 @@
 
 </head>
 
-<body data-spy="scroll" data-target=".navbar">
+<body data-spy="scroll" data-target=".scrollspy">
 
   <div class="container-fluid">
-    <div id="home"></div>
+    <section id="home">
     <div class="row"> <!-- Navbar -->
       <div class="col-md-12">
         <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
-          <div class="col-md-12">
+          <div class="col-md-12 scrollspy">
             <div class="navbar-header">
               <a class="navbar-brand" href="#">Aaron Cremona</a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-              <li>
+              <li class="active">
                 <a href="#home">Home</a>
               </li>
               <li>
@@ -254,9 +254,10 @@
 
       </div>
     </div>    <!-- / Intro Section -->
+    </section>
 
+    <section id="manifesto">
     <div class="continer-fluid manifesto"> <!-- Manifesto -->
-      <a id="manifesto"></a>
       <h3 class="text-center">Manifesto (abridged)</h3>
 
        <!-- Carousel
@@ -311,9 +312,10 @@
           <a href="#portfolio"><i class="continue fa fa-chevron-down"></i></a>
       </div>
     </div>    <!-- /Manifesto -->
+    </section>
 
+    <section id="portfolio">
     <div class="container portfolio">   <!-- Portfolio -->
-      <a id="portfolio"></a>
       <h3 class="text-center">Portfolio</h3>
         <div class="row">
           <div class="col-md-4">
@@ -344,10 +346,11 @@
       </div>
 
     </div>    <!-- /Portfolio -->
+    </section>
 
+    <section id="contact">
     <div class="container contact text-center"> <!-- Contact -->
       <div class="overlay">
-        <a id="contact"></a>
 
         <h3 class="padding-top-50">Contact me</h3>
 
@@ -369,6 +372,7 @@
         </div>
       </div>
     </div> <!--  /Contact -->
+    </section>
 
 
 
