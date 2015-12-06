@@ -14,8 +14,10 @@
 /*    div {
       border: 1px dashed red;
     }
-*/
-    body, html {
+    */
+
+    body,
+    html {
       height: 100%;
       position: relative;
     }
@@ -29,7 +31,8 @@
       padding-bottom: 20px;
     }
 
-    .navbar, .navbar-brand {
+    .navbar,
+    .navbar-brand {
       font-size: 1.75em;
     }
 
@@ -60,8 +63,8 @@
       margin: 0;
     }
 
-
-    .intro, .contact {
+    .intro,
+    .contact {
       color: #ddd;
     }
 
@@ -70,7 +73,7 @@
       background: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/F5D50B4BE8.jpg") no-repeat center fixed;
       background-size: cover;
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
     }
 
     .manifesto {
@@ -79,7 +82,6 @@
       min-height: 100vh;
       background-color: #ddd;
     }
-
 
     .portfolio {
       padding: 0;
@@ -92,11 +94,11 @@
       background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=510562df272fc272c2e7b9a9189a6261") no-repeat center fixed;
       background-size: cover;
       width: 100%;
-      min-height: 100vh;
+      height: 100vh;
     }
 
     .overlay {
-      background: rgba(0,0,0, 0.65);
+      background: rgba(0, 0, 0, 0.65);
       height: 100%;
       width: 100%;
     }
@@ -114,7 +116,6 @@
       padding-top: 50px;
     }
 
-
     .social-links .btn {
       margin-top: 10px;
       background-color: #ddd;
@@ -122,7 +123,6 @@
       transition: all 400ms ease-in-out;
       -webkit-transition: all 400ms ease-in-out;
       transform: scale(1);
-
     }
 
     .social-links .btn-default:hover {
@@ -133,7 +133,6 @@
       transition: all 400ms ease-in-out;
       webkit-transition: all 400ms ease-in-out;
       transform: scale(1.25);
-
     }
 
     i {
@@ -169,15 +168,15 @@
     }
 
     .carousel {
-      min-height: 400px;
+      min-height: 70vh;
       margin-bottom: 60px;
     }
-  
+
     .carousel-caption {
       z-index: 10;
       top: 10%;
     }
-    
+
     .carousel .item {
       min-height: 400px;
       background-color: #777;
@@ -199,158 +198,158 @@
 
   <div class="container-fluid">
     <section id="home">
-    <div class="row"> <!-- Navbar -->
-      <div class="col-md-12">
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
-          <div class="col-md-12 scrollspy">
-            <div class="navbar-header">
-              <a class="navbar-brand" href="#">Aaron Cremona</a>
+      <div class="row"> <!-- Navbar -->
+        <div class="col-md-12">
+          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+            <div class="col-md-12 scrollspy">
+              <div class="navbar-header">
+                <a class="navbar-brand" href="#">Aaron Cremona</a>
+              </div>
+              <ul class="nav navbar-nav navbar-right">
+                <li class="active">
+                  <a href="#home">Home</a>
+                </li>
+                <li>
+                  <a href="#manifesto">Manifesto</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Portfolio</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
+              </ul>
             </div>
-            <ul class="nav navbar-nav navbar-right">
-              <li class="active">
-                <a href="#home">Home</a>
-              </li>
-              <li>
-                <a href="#manifesto">Manifesto</a>
-              </li>
-              <li>
-                <a href="#portfolio">Portfolio</a>
-              </li>
-              <li>
-                <a href="#contact">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>  <!-- /Navbar -->
-
-    <div class="intro">  <!-- Intro section -->
-      <div class="overlay">
-        <div class="row container text-center auto-margin">
-          <h1 class=>Aaron Cremona</h1>
-          <h2 class="padding-bottom">Web Developer</h2>
-          <p>
-            I'm a scientist, engineer, manager and <a href="http://freecodecamp.com/aaroncremona" target="_blank">self taught coder</a>.
-          </p>
+          </nav>
         </div>
+      </div>  <!-- /Navbar -->
 
-        <div class="row social-links auto-margin padding-top-50 text-center">
-          <div class="col-md-2 col-md-offset-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+      <div class="intro">  <!-- Intro section -->
+        <div class="overlay">
+          <div class="row container text-center auto-margin">
+            <h1 class=>Aaron Cremona</h1>
+            <h2 class="padding-bottom">Web Developer</h2>
+            <p>
+              I'm a scientist, engineer, manager and <a href="http://freecodecamp.com/aaroncremona" target="_blank">self taught coder</a>.
+            </p>
           </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+
+          <div class="row social-links auto-margin padding-top-50 text-center">
+            <div class="col-md-2 col-md-offset-2">
+              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
+            </div>
           </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+
+          <div class="row auto-margin padding-top-75 text-center">
+            <a href="#manifesto"><i class="continue fa fa-chevron-down"></i></a>
           </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
-          </div>
+
         </div>
-
-        <div class="row auto-margin padding-top-75 text-center">
-          <a href="#manifesto"><i class="continue fa fa-chevron-down"></i></a>
-        </div>
-
-      </div>
-    </div>    <!-- / Intro Section -->
+      </div>    <!-- / Intro Section -->
     </section>
 
     <section id="manifesto">
-    <div class="continer-fluid manifesto"> <!-- Manifesto -->
-      <h3 class="text-center">Manifesto (abridged)</h3>
+      <div class="continer-fluid manifesto"> <!-- Manifesto -->
+        <h3 class="text-center">Manifesto (abridged)</h3>
 
        <!-- Carousel
-          ================================================== -->
-          <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-              <li data-target="#myCarousel" data-slide-to="1"></li>
-              <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner" role="listbox">
-              <div class="item active">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1><strong>Do more with less</strong></h1>
-                    <p><i class="fa fa-exclamation padding-right red"></i> Reduce labor hours. Increase workload. Expect your pepole to make it work. Wonder why mistakes are piling up and stress is high.</p>
-                    <p><i class="fa fa-check padding-right green"></i> Use technology to automate workflows. Happy people and a happy business. What makes you shake your head and say "there's got to be an eaiser way?"</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1><strong>Why<sup>5</sup></strong></h1>
-                    <p><i class="fa fa-exclamation padding-right red"></i> As a quality engineer, I investigated countless problems. The real issues are usually not at the surface. There is a saying that one must ask "why" at least 5 times to get to the true root cause of a situation. Have you ever seen a hard-fought solution that just seemed to miss the mark? Was the problem poorly defined up front?</p>
-                    <p><i class="fa fa-check padding-right green"></i> My web development philosopy is to look at a problem in its bigger context and work to drive the big picture forward.</p>
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <div class="container">
-                  <div class="carousel-caption">
-                    <h1>ROI is King.</h1>
-                    <p><i class="fa fa-exclamation padding-right red"></i> When all you have is a hammer, everything looks like a nail. People that love technlogy often have trouble identifying a solution matches the scope of the problem. Kicking off a project is an investment and it must generate a return for your business.</p>
-                    <p><i class="fa fa-check padding-right green"></i> Waiting for the perefect move means waiting forever. Big problems are really just a series of small problems. Pick something with impact in your business, then take a step forward that makes sense for you. I can help figure out a "right-sized" solution.</p>
-                  </div>
-                </div>
+       ================================================== -->
+       <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="5000">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item active">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1><strong>Do more with less</strong></h1>
+                <p><i class="fa fa-exclamation padding-right red"></i> Reduce labor hours. Increase workload. Expect your pepole to make it work. Wonder why mistakes are piling up and stress is high.</p>
+                <p><i class="fa fa-check padding-right green"></i> Use technology to automate workflows. Happy people and a happy business. What makes you shake your head and say "there's got to be an eaiser way?"</p>
               </div>
             </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-              <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-              <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div><!-- /.carousel -->
-      
-      <div class="row auto-margin padding-top-75 text-center">
-          <a href="#portfolio"><i class="continue fa fa-chevron-down"></i></a>
-      </div>
-    </div>    <!-- /Manifesto -->
-    </section>
-
-    <section id="portfolio">
-    <div class="container portfolio">   <!-- Portfolio -->
-      <h3 class="text-center">Portfolio</h3>
-        <div class="row">
-          <div class="col-md-4">
-            <h4>Heading</h4>
-            <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s480x480/e35/12120230_1660914670849910_809073269_n.jpg">
-            <p>
-              Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-            </p>
           </div>
-          <div class="col-md-4">
-            <h4>						Heading					</h4>
-            <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/s480x480/e35/10899184_1094440900627191_1417572849_n.jpg">
-            <p>
-              Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-            </p>
+          <div class="item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1><strong>Why<sup>5</sup></strong></h1>
+                <p><i class="fa fa-exclamation padding-right red"></i> As a quality engineer, I investigated countless problems. The real issues are usually not at the surface. There is a saying that one must ask "why" at least 5 times to get to the true root cause of a situation. Have you ever seen a hard-fought solution that just seemed to miss the mark? Was the problem poorly defined up front?</p>
+                <p><i class="fa fa-check padding-right green"></i> My web development philosopy is to look at a problem in its bigger context and work to drive the big picture forward.</p>
+              </div>
+            </div>
           </div>
-          <div class="col-md-4">
-            <h4>						Heading					</h4>
-            <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/s640x640/sh0.08/e35/11917909_779213922189436_1742703322_n.jpg">
-            <p>
-              Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
-            </p>
+          <div class="item">
+            <div class="container">
+              <div class="carousel-caption">
+                <h1>ROI is King.</h1>
+                <p><i class="fa fa-exclamation padding-right red"></i> When all you have is a hammer, everything looks like a nail. People that love technlogy often have trouble identifying a solution matches the scope of the problem. Kicking off a project is an investment and it must generate a return for your business.</p>
+                <p><i class="fa fa-check padding-right green"></i> Waiting for the perefect move means waiting forever. Big problems are really just a series of small problems. Pick something with impact in your business, then take a step forward that makes sense for you. I can help figure out a "right-sized" solution.</p>
+              </div>
+            </div>
           </div>
         </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div><!-- /.carousel -->
+      
+      <div class="row auto-margin padding-top-75 text-center">
+        <a href="#portfolio"><i class="continue fa fa-chevron-down"></i></a>
+      </div>
+    </div>    <!-- /Manifesto -->
+  </section>
+
+  <section id="portfolio">
+    <div class="container portfolio">   <!-- Portfolio -->
+      <h3 class="text-center">Portfolio</h3>
+      <div class="row">
+        <div class="col-md-4">
+          <h4>Heading</h4>
+          <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpa1/t51.2885-15/s480x480/e35/12120230_1660914670849910_809073269_n.jpg">
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>						Heading					</h4>
+          <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/s480x480/e35/10899184_1094440900627191_1417572849_n.jpg">
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h4>						Heading					</h4>
+          <img class="img-responsive" src="https://scontent.cdninstagram.com/hphotos-xpf1/t51.2885-15/s640x640/sh0.08/e35/11917909_779213922189436_1742703322_n.jpg">
+          <p>
+            Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.
+          </p>
+        </div>
+      </div>
 
       <div class="row auto-margin padding-top-75 text-center">
-          <a href="#contact"><i class="continue fa fa-chevron-down"></i></a>
+        <a href="#contact"><i class="continue fa fa-chevron-down"></i></a>
       </div>
 
     </div>    <!-- /Portfolio -->
-    </section>
+  </section>
 
-    <section id="contact">
+  <section id="contact">
     <div class="container contact text-center"> <!-- Contact -->
       <div class="overlay">
 
@@ -374,8 +373,8 @@
         </div>
       </div>
     </div> <!--  /Contact -->
-    </section>
-
+  </section>
+</div>
 
 
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -394,16 +393,16 @@
       setNavPadding();
     });
 
-  $("a[href^='#']").on('click', function(event) {
-    var target = this.hash,
+    $("a[href^='#']").on('click', function(event) {
+      var target = this.hash,
       navOffset = $('#navbar').height();
 
-    event.preventDefault();
+      event.preventDefault();
 
-    return $('html, body').animate({
-      scrollTop: $(this.hash).offset().top - navOffset
-    }, 700);
-  });
+      return $('html, body').animate({
+        scrollTop: $(this.hash).offset().top - navOffset
+      }, 700);
+    });
   </script>
 </body>
 </html>
