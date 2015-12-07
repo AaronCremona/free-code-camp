@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Aaron Cremona's Free Code Camp Portfolio Zipline</title>
-
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
   <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
@@ -28,7 +30,7 @@
     }
 
     .padding-bottom {
-      padding-bottom: 20px;
+      padding-bottom: 1.25em;
     }
 
     .navbar,
@@ -41,7 +43,7 @@
     }
 
     .intro h1 {
-      padding-top: 100px;
+      padding-top: 1em;
       font-size: 6.9em;
     }
 
@@ -59,7 +61,7 @@
 
     h3 {
       font-size: 4.2em;
-      padding: 30px 0 50px 0;
+      padding: 1.5em 0 1.0em 0;
       margin: 0;
     }
 
@@ -70,10 +72,13 @@
 
     .intro {
       padding: 0;
-      background: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/F5D50B4BE8.jpg") no-repeat center fixed;
+      background: url("https://snap-photos.s3.amazonaws.com/img-thumbs/960w/F5D50B4BE8.jpg") no-repeat center;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
       background-size: cover;
-      width: 100%;
-      height: 100vh;
+/*      width: 100%;*/
+      min-height: 100vh;
     }
 
     .manifesto {
@@ -91,16 +96,21 @@
 
     .contact {
       padding: 0;
-      background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=510562df272fc272c2e7b9a9189a6261") no-repeat center fixed;
-      background-size: cover;
+      background: url("https://images.unsplash.com/photo-1444703686981-a3abbc4d4fe3?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&s=510562df272fc272c2e7b9a9189a6261") no-repeat center;
       width: 100%;
-      height: 100vh;
+      min-height: 100vh;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      min-height: 100vh;
     }
 
     .overlay {
       background: rgba(0, 0, 0, 0.65);
       height: 100%;
       width: 100%;
+      z-index: 10;
     }
 
     .auto-margin {
@@ -109,11 +119,11 @@
     }
 
     .padding-top-75 {
-      padding-top: 75px;
+      padding-top: 4.6em;
     }
 
     .padding-top-50 {
-      padding-top: 50px;
+      padding-top: 3.1em;
     }
 
     .social-links .btn {
@@ -140,9 +150,9 @@
     }
 
     .continue {
-      font-size: 80px;
+      font-size: 5em;
       color: #ddd;
-      padding-bottom: 30px;
+      padding-bottom: 1em;
       transition: all 400ms ease-in-out;
       -webkit-transition: all 400ms ease-in-out;
       transform: scale(1);
@@ -164,12 +174,12 @@
     }
 
     .contact .social-links {
-      padding-top: 150px;
+      padding-top: 9em;
     }
 
     .carousel {
-      min-height: 70vh;
-      margin-bottom: 60px;
+      min-height: 400px;
+      margin-bottom: 3.75em;
     }
 
     .carousel-caption {
@@ -350,8 +360,9 @@
   </section>
 
   <section id="contact">
+
     <div class="container contact text-center"> <!-- Contact -->
-      <div class="overlay">
+            <div class="overlay">
 
         <h3 class="padding-top-50">Contact me</h3>
 
