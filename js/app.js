@@ -23,6 +23,7 @@
     $(document).ready(function() {
       setNavPadding();
       setSlideHeight();
+      $('[data-toggle="tooltip"]').tooltip()
     });
 
     $(window).resize(function() {
@@ -40,3 +41,4 @@
         scrollTop: $(this.hash).offset().top - navOffset
       }, 700);
     });
+
