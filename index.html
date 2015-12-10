@@ -118,6 +118,10 @@
       transition: all 400ms ease-in-out;
       -webkit-transition: all 400ms ease-in-out;
       transform: scale(1);
+      border-radius: 50%;
+      font-size: 3em;
+      height: 1.6em;
+      width: 1.6em;
     }
 
     .social-links .btn-default:hover {
@@ -128,10 +132,7 @@
       transition: all 400ms ease-in-out;
       webkit-transition: all 400ms ease-in-out;
       transform: scale(1.25);
-    }
 
-    i {
-      padding-right: 10px;
     }
 
     .continue {
@@ -171,7 +172,6 @@
       display: flex;
       align-items: center;
       flex-direction: column;
-/*      height: 400px;*/
     }
 
     .carousel-inner {
@@ -190,8 +190,24 @@
       color: green;
     }
 
-    .contact a {
+    .email {
       color: #56A6EA;
+    }
+
+    .linkedin {
+      color: #1A84BC;
+    }
+
+    .twitter {
+      color: #0084B4;
+    }
+
+    .fcc {
+      color: #4A2B0F;
+    }
+
+    .padding-right {
+      padding-right: .5em;
     }
 
   </style>
@@ -243,16 +259,16 @@
 
           <div class="row social-links auto-margin padding-top-50 text-center">
             <div class="col-md-2 col-md-offset-2">
-              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+              <a class="btn btn-default linkedin" href="https://www.linkedin.com/in/aaron-cremona-b3a3904" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
             <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
+              <a class="btn btn-default twitter" href="https://twitter.com/aroncremona" role="button" target="_blank"><i class="fa fa-twitter"></i></a>
             </div>
             <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
+              <a class="btn btn-default" href="https://github.com/AaronCremona" role="button" target="_blank"><i class="fa fa-github-alt"></i></a>
             </div>
             <div class="col-md-2">
-              <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
+              <a class="btn btn-default fcc" href="http://www.freecodecamp.com/aaroncremona" role="button" target="_blank"><i class="fa fa-fire"></i></a>
             </div>
           </div>
 
@@ -357,22 +373,22 @@
     <div class="container contact text-center"> <!-- Contact -->
         <h3 class="padding-top-50">Contact me</h3>
 
-        <p class="padding-top-50"><i class="fa fa-envelope-o padding-right"></i><a href="mailto:aaron.m.cremona@gmail.com">aaron.m.cremona@gmail.com</a></p>
+        <p class="padding-top-50"><i class="fa fa-envelope-o padding-right"></i><a href="mailto:aaron.m.cremona@gmail.com" class="email">aaron.m.cremona@gmail.com</a></p>
 
-        <div class="row social-links auto-margin padding-top-75 text-center">
-          <div class="col-md-2 col-md-offset-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-linkedin"></i>Linkedin</a>
+          <div class="row social-links auto-margin padding-top-50 text-center">
+            <div class="col-md-2 col-md-offset-2">
+              <a class="btn btn-default linkedin" href="https://www.linkedin.com/in/aaron-cremona-b3a3904" role="button" target="_blank"><i class="fa fa-linkedin"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default twitter" href="https://twitter.com/aroncremona" role="button" target="_blank"><i class="fa fa-twitter"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default" href="https://github.com/AaronCremona" role="button" target="_blank"><i class="fa fa-github-alt"></i></a>
+            </div>
+            <div class="col-md-2">
+              <a class="btn btn-default fcc" href="http://www.freecodecamp.com/aaroncremona" role="button" target="_blank"><i class="fa fa-fire"></i></a>
+            </div>
           </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-twitter"></i>Twitter</a>
-          </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-github-alt"></i>Github</a>
-          </div>
-          <div class="col-md-2">
-            <a class="btn btn-default" href="#" role="button" target="_blank"><i class="fa fa-fire"></i>Free Code Camp</a>
-          </div>
-        </div>
     </div> <!--  /Contact -->
   </section>
 </div>
