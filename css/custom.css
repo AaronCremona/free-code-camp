@@ -1,6 +1,6 @@
- div {
+/* div {
   border: 1px dashed red;
-}
+}*/
 
 
 body,
@@ -15,29 +15,40 @@ html {
 }
 
 .padding-bottom {
-  padding-bottom: 1.25em;
+  padding-bottom: 10%;
 }
 
 .navbar,
 .navbar-brand {
-  font-size: 1.75em;
-}
-
-.carousel p {
-  font-size: 1.3em;
+  font-size: 1.5em;
 }
 
 .intro h1 {
-  padding-top: 1em;
-  font-size: 6.9em;
+  padding-top: 10%;
+  font-size: 5.7em;
 }
 
 .intro h2 {
-  font-size: 4.2em;
+  font-size: 3.4em;
 }
 
 p {
-  font-size: 2.3em;
+  font-size: 1.8em;
+}
+
+@media (min-width: 768px) { 
+  .intro h1 {
+    font-size: 6.9em;
+  }
+
+  .intro h2 {
+    font-size: 4.2em;
+  }
+
+  p {
+    font-size: 2.3em;
+  }
+
 }
 
 .social-links a {
