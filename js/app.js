@@ -23,7 +23,7 @@
     $(document).ready(function() {
       setNavPadding();
       setSlideHeight();
-      $('[data-toggle="tooltip"]').tooltip()
+      $('[data-toggle="tooltip"]').tooltip();
     });
 
     $(window).resize(function() {
